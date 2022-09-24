@@ -1,14 +1,37 @@
-<p style="color: green"><%= notice %></p>
+<nav class="mycategs">
+  <div class="categs">
+    <div>
+      <%= link_to '', root_path, class: "arrow-left" %>
+    </div>
+    <div>
+      <h1 class="txt">Categories</h1>
+    </div>
+    <div>
+      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "destry" %>
+    </div>
+  </div>
+</nav>
+<% @categories.each do |category| %>
+  <%= link_to category_path(category) do %>
+    <ul class="section-container">
+      <li class="icon">
+        <%= category.icon %>
+      </li>
 
-<h1>Categories</h1>
+      <li class="name-time">
+        <p class="categories-name"><%= category.name %></p>
+        <span class="date"><%= category.created_at.strftime("%Y/%m/%d") %></span>
+      </li>
 
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
+      <li class="left">
+        <div class="sum-delete">
+          <p class="sum">Sum: $<%= category.entities.sum(:amount)%></p>
+        </div>
+      </li>
+    </ul>
   <% end %>
-</div>
+<% end %>
 
-<%= link_to "New category", new_category_path %>
+<div class="addnew">
+  <%= link_to "Add New Category", new_category_path, class: "addnew2" %>
+</div>

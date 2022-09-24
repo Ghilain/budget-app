@@ -1,14 +1,14 @@
 Rails.application.routes.draw do
-  resources :categories
   devise_for :users
+  resources :entities
+  resources :categories
+  resources :users
   unauthenticated :user do
     root to: 'users#index'
   end
 
-  authenticated :user do
-    root 'groups#index', as: :authenticated_root
+  authenticated do
+    root 'categories#index', as: :authenticated_root
   end
 
-  resources :groups
-  resources :entities
 end

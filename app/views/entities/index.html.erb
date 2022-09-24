@@ -1,14 +1,26 @@
+<nav class="mycategs">
+  <ul class="categs list-unstyled">
+    <li>
+    <%= link_to '<', categories_path, class: "arrow-left" %>
+    </li>
+    <li>
+      <h1 class="txt">ADD entitieS HERE</h1>
+    </li>
+    <li>
+      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "destry" %>
+    </li>
+  </ul>
+</nav>
+<section>
 <p style="color: green"><%= notice %></p>
 
-<h1>Entities</h1>
-
-<div id="entities">
+<div class="entities">
   <% @entities.each do |entity| %>
     <%= render entity %>
-    <p>
-      <%= link_to "Show this entity", entity %>
-    </p>
   <% end %>
 </div>
 
-<%= link_to "New entity", new_entity_path %>
+<div class="new-entity">
+  <%= link_to "New entity", new_entity_path %>
+</div>
+</section>
