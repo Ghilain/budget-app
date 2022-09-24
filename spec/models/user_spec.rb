@@ -1,4 +1,4 @@
-require 'rails_helper' # rubocop:todo Layout/EndOfLine
+require 'rails_helper'
 
 RSpec.describe User, type: :model do
   subject { User.create(name: 'lynette', email: 'lynette@test.com', password: 'ettescents') }

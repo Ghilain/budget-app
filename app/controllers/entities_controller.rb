@@ -1,4 +1,4 @@
-class EntitiesController < ApplicationController # rubocop:todo Layout/EndOfLine
+class EntitiesController < ApplicationController
   before_action :set_entity, only: %i[show edit update destroy]
   before_action :authenticate_user!
 

@@ -1,2 +1,2 @@
-json.extract! group, :id, :created_at, :updated_at # rubocop:todo Layout/EndOfLine
+json.extract! group, :id, :created_at, :updated_at
 json.url group_url(group, format: :json)
