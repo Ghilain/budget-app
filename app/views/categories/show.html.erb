@@ -1,10 +1,42 @@
+<nav class="categories-nav">
+  <div class="category-nav">
+    <div>
+      <%= link_to '<', entities_path, class: "arrow-left" %>
+    </div>
+    <div>
+      <h1 class="transf">Entities</h1>
+    </div>
+    <div>
+      <%= button_to 'LOGOUT', destroy_user_session_path, method: :delete, class: "deletes" %>
+    </div>
+  </div>
+</nav>
 <p style="color: green"><%= notice %></p>
 
-<%= render @category %>
+<div class="entities">
+  <div class="transaction">
+   <p>Total Transactions</p>
+   <p>$<%= @category.Entities.sum(:amount) %></p>
+  </div>
+</div>
 
-<div>
-  <%= link_to "Edit this category", edit_category_path(@category) %> |
-  <%= link_to "Back to categories", categories_path %>
+<% @entities.each do |entity| %>
+  <div class="micons">
+    <ul class="single">
+      <li>
+        <%= @category.icon %>
+      </li>
+      <li>
+        <p><%= entity.name %></p>
+        <p><%= entity.created_at.strftime("%Y/%m/%d %I:%M %p") %></p>  
+      </li>
+      <li>
+        <p>$<%= entity.amount %></p>
+      </li>
+    </ul>
+  </div> 
+<% end %>
 
-  <%= button_to "Destroy this category", @category, method: :delete %>
+<div class="addnew">
+  <%= link_to "ADD NEW TRANSACTION", new_entity_path(category_id: @category.id), class: "addnew2" %>
 </div>

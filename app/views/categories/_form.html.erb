@@ -1,17 +1,29 @@
-<%= form_with(model: category) do |form| %>
-  <% if category.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
+<section class="wblock">
+  <ul class="block list-unstyled">
+    <%= form_with(model: category) do |form| %>
+      <% if category.errors.any? %>
+        <li style="color: red">
+          <h2><%= pluralize(category.errors.count, "error") %> not allowed this category from being saved:</h2>
 
-      <ul>
-        <% category.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+          <div>
+            <% category.errors.each do |error| %>
+              <div><%= error.full_message %></div>
+            <% end %>
+          </div>
+        </li>
+      <% end %>
 
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+      <li class="ame">
+        <%= form.text_field :name, class: 'catn', placeholder: 'Enter Category name' %>
+      </li>
+      <hr />
+      <li class="ame">
+        <%= form.text_field :icon, class: 'caticon', placeholder: 'Enter Icon Name' %>
+      </li>
+
+      <li class="sub">
+        <%= form.submit 'Add', class: 'submits' %>
+      </li>
+    <% end %>
+  </ul>
+</section>

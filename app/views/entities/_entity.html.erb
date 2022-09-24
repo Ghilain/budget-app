@@ -1,2 +1,17 @@
-<div id="<%= dom_id entity %>">
-</div>
+<section id="<%= dom_id entity %>">
+  <div class="payshow">
+    <p class="nam">
+      <strong>Name: </strong>
+      <%=  entity.name %>
+    </p>
+
+    <p>
+      <strong>Amount: $</strong>
+      <%= entity.amount %>
+    </p>
+
+    <p class="move">
+      <%= link_to "Show", entity, class: 'move' %>
+    </p>
+  </div>
+</section>
