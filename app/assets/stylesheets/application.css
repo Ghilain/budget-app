@@ -175,9 +175,6 @@ hr {
   display: none;
 }
 
-
-
-
 .submits,
 .save {
   display: flex;
@@ -192,8 +189,6 @@ hr {
   margin: 10px 10px;
   color: #3582db;
 }
-
-
 
 .transaction {
   display: flex;
