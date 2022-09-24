@@ -1,10 +1,10 @@
 <nav class="first">
   <ul class="second list-unstyled">
-    <li class="arrow-left">
-      <%= link_to '<', new_registration_path(resource_name), class: "arrow-left" %>
+    <li class="arrow-back">
+      <%= link_to '<', new_registration_path(resource_name), class: "arrow-back" %>
     </li>
     <li>
-      <h2 class="logs">LOGIN</h2>
+      <h2 class="logs-in">LOGIN</h2>
     </li>
     <li>
       <i class="d-none">Log in</i>
@@ -29,8 +29,8 @@
     </li>
   <% end %>
 
-  <li class="actions">
-    <%= f.submit "Log in", class: 'signup1' %>
+  <li class="field">
+    <%= f.submit "Log in", class: 'btn-primary' %>
   </li>
   </ul>
 <% end %>

@@ -1,10 +1,10 @@
 <nav class="navbars">
   <div class="bars">
-  <div class="arrow-left">
-    <%= link_to '<', root_path, class: "arrow-left" %>
+  <div class="arrow-back">
+    <%= link_to '<', root_path, class: "arrow-back" %>
   </div>
     <div>
-      <p>Register</p>
+      <h1 class="register">Register</h1>
     </div>
     <div>
       <p class="d-none">Next</p>
@@ -34,7 +34,7 @@
     </li>
 
     <li class="actions">
-      <%= f.submit "Sign up", class: 'signup1' %>
+      <%= f.submit "Sign up", class: 'btn-primary' %>
     </li>
     </ul>
   <% end %>

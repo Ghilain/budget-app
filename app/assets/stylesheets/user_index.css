@@ -1,8 +1,49 @@
-.btn .sign_up {
-  color: white;
-  background-color: rgb(0, 152, 240);
-}
-
-.sign_up {
+.btn  > a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .btn{
+    margin-left: 2%;
+  }
+  .arrow-back{
+    font-size: 30px;
+    color: #fff;
+  }
+  .field{
+    border: 0;
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    text-align: center;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 95vh;
+  }
+  .logs-in,
+  .actions,
+  .register{
+    text-align: center;
+  }
+  .btn-primary{
     color: white;
+  }
+  .center-block{
+    width: 100%;
+    align-items: center;
+  }
+  .title{
+    font-size: 3em;
+    flex: 0.7;
+    font-family: 'Gladista Script', sans-serif;
+    margin-top: 3%;
+    text-align: center;
+    color: #2b343b;
+  }
+  .btns-container{
+    text-align: center;
+    margin-top: 10%;
   }

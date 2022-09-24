@@ -1,10 +1,10 @@
-<nav class="mycategs">
+<nav>
   <div class="categs">
     <div>
-      <%= link_to '', root_path, class: "arrow-left" %>
+      <%= link_to '<', root_path, class: "arrow-back" %>
     </div>
     <div>
-      <h1 class="txt">Categories</h1>
+      <h1>Categories</h1>
     </div>
     <div>
       <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "destry" %>
@@ -13,14 +13,14 @@
 </nav>
 <% @categories.each do |category| %>
   <%= link_to category_path(category) do %>
-    <ul class="section-container">
+    <ul class="section-container list-unstyled">
       <li class="icon">
         <%= category.icon %>
       </li>
 
-      <li class="name-time">
-        <p class="categories-name"><%= category.name %></p>
-        <span class="date"><%= category.created_at.strftime("%Y/%m/%d") %></span>
+      <li>
+        <p><%= category.name %></p>
+        <span><%= category.created_at.strftime("%Y/%m/%d") %></span>
       </li>
 
       <li class="left">
