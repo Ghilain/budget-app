@@ -1,4 +1,4 @@
-.categs {
+.title-categs {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   font-weight: 650;
 }
 
-.destry,
+.destroy,
 .deletes {
   background-color: #3582db;
   border: none;
@@ -17,7 +17,7 @@
   font-weight: 650;
 }
 
-.section-container {
+.list-unstyled-cat {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -25,7 +25,7 @@
   color: #000;
 }
 
-.icon {
+.icon-cat {
   color: #000;
   font-size: 18px;
 }
@@ -34,7 +34,7 @@ hr {
   margin-left: 15px;
 }
 
-.addnew {
+.addnew-cat {
   display: flex;
   flex: 2;
   align-items: center;
@@ -47,7 +47,7 @@ hr {
   bottom: 0;
 }
 
-.addnew2 {
+.addnew-cat2 {
   align-items: center;
   justify-content: center;
   padding: 15px;
@@ -58,12 +58,12 @@ hr {
   color: #fff;
 }
 
-.arrow-left {
+.arrow-back {
   font-size: 30px;
   color: #fff;
 }
 
-.a-category {
+.add1-category {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -74,8 +74,8 @@ hr {
   font-weight: 650;
 }
 
-.catn,
-.caticon,
+.name-cat,
+.icon-cat,
 .f-text {
   border: 0;
   padding: 15px;
@@ -83,7 +83,7 @@ hr {
   outline: none;
 }
 
-.category-nav {
+.div-category-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;

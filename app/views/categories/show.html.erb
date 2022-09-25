@@ -1,10 +1,10 @@
-<nav class="categories-nav">
-  <div class="category-nav">
+<nav>
+  <div class="div-category-nav">
     <div>
-      <%= link_to '<', entities_path, class: "arrow-left" %>
+      <%= link_to '<', entities_path, class: "arrow-back" %>
     </div>
     <div>
-      <h1 class="transf">Entities</h1>
+      <h1>Entities</h1>
     </div>
     <div>
       <%= button_to 'LOGOUT', destroy_user_session_path, method: :delete, class: "deletes" %>
@@ -16,7 +16,7 @@
 <div class="entities">
   <div class="transaction">
    <p>Total Transactions</p>
-   <p>$<%= @category.Entities.sum(:amount) %></p>
+   <p>$<%= @category.entities.sum(:amount) %></p>
   </div>
 </div>
 
@@ -37,6 +37,6 @@
   </div> 
 <% end %>
 
-<div class="addnew">
-  <%= link_to "ADD NEW TRANSACTION", new_entity_path(category_id: @category.id), class: "addnew2" %>
+<div class="addnew-cat">
+  <%= link_to "ADD NEW TRANSACTION", new_entity_path(category_id: @category.id), class: "addnew-cat2" %>
 </div>

@@ -175,7 +175,7 @@ hr {
   display: none;
 }
 
-.submits,
+.add-cat-sub,
 .save {
   display: flex;
   align-items: center;
@@ -216,7 +216,7 @@ hr {
   font-weight: bolder;
 }
 
-.arrow-left {
+.arrow-back {
   font-size: 30px;
   color: #fff;
 }

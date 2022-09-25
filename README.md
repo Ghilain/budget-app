@@ -4,6 +4,11 @@
 
 The Ruby on Rails capstone project is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
+## Built With
+- Ruby on Rails
+- PostgreSQL
+- Bootstrap CSS Framework
+
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
@@ -34,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](/issues).
+Feel free to check the [issues page](https://github.com/Ghilain/budget-app/issues).
 
 ## Show your support
 

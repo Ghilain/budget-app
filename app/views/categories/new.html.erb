@@ -1,13 +1,13 @@
-<nav class="add-category">
-  <div class="a-category center-block">
+<nav>
+  <div class="add1-category center-block">
     <div>
-      <%= link_to '<', categories_path, class: "arrow-left" %>
+      <%= link_to '<', categories_path, class: "arrow-back" %>
     </div>
     <div>
-      <h1 class="add">add category</h1>
+      <h1>add category</h1>
     </div>
     <div>
-      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "destry" %>
+      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "destroy" %>
     </div>
   </div>
 </nav>
