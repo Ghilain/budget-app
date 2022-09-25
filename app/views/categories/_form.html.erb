@@ -1,5 +1,5 @@
-<section class="wblock">
-  <ul class="block list-unstyled">
+<section>
+  <ul class="list-unstyled">
     <%= form_with(model: category) do |form| %>
       <% if category.errors.any? %>
         <li style="color: red">
@@ -13,16 +13,16 @@
         </li>
       <% end %>
 
-      <li class="ame">
-        <%= form.text_field :name, class: 'catn', placeholder: 'Enter Category name' %>
+      <li>
+        <%= form.text_field :name, class: 'name-cat', placeholder: 'Enter Category name' %>
       </li>
       <hr />
       <li class="ame">
-        <%= form.text_field :icon, class: 'caticon', placeholder: 'Enter Icon Name' %>
+        <%= form.text_field :icon, class: 'icon-cat', placeholder: 'Enter Icon Name' %>
       </li>
 
       <li class="sub">
-        <%= form.submit 'Add', class: 'submits' %>
+        <%= form.submit 'Add', class: 'add-cat-sub' %>
       </li>
     <% end %>
   </ul>
