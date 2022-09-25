@@ -1,0 +1,32 @@
+.payment-btn {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 29.9px;
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #398ceb;
+}
+
+.pay-show {
+  display: flex;
+  box-shadow: 5px 5px 7px #9aa3aa;
+  padding: 19.9px;
+  gap: 10px;
+}
+
+.sec-transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 5px 5px 7px #b1bac0;
+  margin-bottom: 19.9px;
+}
+
+.expense-btn {
+  color: rgb(240, 238, 238);
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}

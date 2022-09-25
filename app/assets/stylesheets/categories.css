@@ -2,36 +2,55 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: rgb(253, 253, 253);
   padding: 20px;
   list-style: none;
-  background-color: #3582db;
-  font-weight: 650;
+  background-color: #2f7fdb;
+  font-weight: 750;
+}
+
+.add-cat-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 39.9%;
+  padding: 5px;
+  border-radius: 30px;
+  border: 1px solid #3583dd;
+  background-color: rgb(253, 250, 250);
+  font-size: 16.9px;
+  margin: 10px 10px;
+  color: #3789e6;
 }
 
 .destroy,
 .deletes {
-  background-color: #3582db;
+  background-color: #317bcf;
   border: none;
-  color: #fff;
-  font-weight: 650;
+  color: rgb(255, 251, 251);
+  font-weight: 750;
+}
+
+.sec-icons {
+  display: flex;
+  width: 100%;
 }
 
 .list-unstyled-cat {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  box-shadow: 5px 5px 7px #a2abb1;
-  color: #000;
+  padding: 19.9px;
+  box-shadow: 5px 5px 7px #98a0a5;
+  color: rgb(7, 1, 1);
 }
 
 .icon-cat {
-  color: #000;
-  font-size: 18px;
+  color: rgb(7, 1, 1);
+  font-size: 17px;
 }
 
 hr {
-  margin-left: 15px;
+  margin-left: 14.9px;
 }
 
 .addnew-cat {
@@ -39,9 +58,9 @@ hr {
   flex: 2;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding: 12px;
-  background-color: #5fb523;
+  width: 99.9%;
+  padding: 11.9px;
+  background-color: #5bb31d;
   text-transform: uppercase;
   position: absolute;
   bottom: 0;
@@ -51,35 +70,35 @@ hr {
   align-items: center;
   justify-content: center;
   padding: 15px;
-  border: 1px solid #fff;
-  background-color: #5fb523;
-  font-size: 17px;
+  border: 1px solid rgb(255, 254, 254);
+  background-color: #66ca1e;
+  font-size: 16.9px;
   margin: 10px 10px;
-  color: #fff;
+  color: rgb(252, 252, 252);
 }
 
 .arrow-back {
   font-size: 30px;
-  color: #fff;
+  color: rgb(250, 250, 250);
 }
 
 .add1-category {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: rgb(255, 253, 253);
   padding: 20px;
   list-style: none;
-  background-color: #3582db;
-  font-weight: 650;
+  background-color: #2880e6;
+  font-weight: 750;
 }
 
 .name-cat,
 .icon-cat,
-.f-text {
+.form-text {
   border: 0;
-  padding: 15px;
-  width: 100%;
+  padding: 14.9px;
+  width: 99.9%;
   outline: none;
 }
 
@@ -87,9 +106,9 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
-  padding: 20px;
+  color: rgb(250, 250, 250);
+  padding: 19.9px;
   list-style: none;
-  background-color: #3582db;
-  font-weight: 650;
+  background-color: #3286e6;
+  font-weight: 750;
 }

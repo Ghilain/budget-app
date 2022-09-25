@@ -1,5 +1,4 @@
-<section class="wblock">
-  <div class="block">
+<section>
     <%= form_with(model: entity, url: entities_url(category_id: category_id)) do |form| %>
       <ul class="list-unstyled">
       <% if entity.errors.any? %>
@@ -15,11 +14,11 @@
       <% end %>
 
       <li>
-        <%= form.text_field :name, class: 'f-text', placeholder: 'Enter entity name' %>
+        <%= form.text_field :name, class: 'form-text', placeholder: 'Enter entity name' %>
       </li>
       <hr />
       <li>
-        <%= form.number_field :amount, class: 'f-text', placeholder: 'Enter Amount' %>
+        <%= form.number_field :amount, class: 'form-text', placeholder: 'Enter Amount' %>
       </li>
 
       <li>
@@ -27,5 +26,4 @@
       </li>
       </ul>
     <% end %>
-  </div>
 </section>

@@ -7,7 +7,7 @@
       <h1 class="register">Register</h1>
     </div>
     <div>
-      <p class="d-none">Next</p>
+      <p class="next-none">Next</p>
     </div>
   </div>
 </nav>
@@ -18,7 +18,7 @@
     <%= render "devise/shared/error_messages", resource: resource %>
     <ul class="list-unstyled">
     <li class="field">
-      <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Full name", class: "field1" %>
+      <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Full name", class: "fullname" %>
     </li>
     <hr />
     <li class="field">
@@ -33,7 +33,7 @@
       <%= f.password_field :password_confirmation, autocomplete: "new-password",  placeholder: "Confirm your password", class: "password1" %>
     </li>
 
-    <li class="actions">
+    <li class="resend-actions">
       <%= f.submit "Sign up", class: 'btn-primary' %>
     </li>
     </ul>

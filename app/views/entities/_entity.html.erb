@@ -1,6 +1,6 @@
 <section id="<%= dom_id entity %>">
-  <div class="payshow">
-    <p class="nam">
+  <div class="pay-show">
+    <p>
       <strong>Name: </strong>
       <%=  entity.name %>
     </p>
@@ -10,8 +10,8 @@
       <%= entity.amount %>
     </p>
 
-    <p class="move">
-      <%= link_to "Show", entity, class: 'move' %>
+    <p class="remove">
+      <%= link_to "Show", entity, class: 'remove' %>
     </p>
   </div>
 </section>

@@ -14,14 +14,14 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="entities">
-  <div class="transaction">
+  <div class="sec-transaction">
    <p>Total Transactions</p>
    <p>$<%= @category.entities.sum(:amount) %></p>
   </div>
 </div>
 
 <% @entities.each do |entity| %>
-  <div class="micons">
+  <section class="sec-icons">
     <ul class="single">
       <li>
         <%= @category.icon %>
@@ -34,7 +34,7 @@
         <p>$<%= entity.amount %></p>
       </li>
     </ul>
-  </div> 
+  </section> 
 <% end %>
 
 <div class="addnew-cat">
