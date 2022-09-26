@@ -1,0 +1,88 @@
+.btn > a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.btn {
+  margin-left: 2%;
+}
+
+.arrow-back {
+  font-size: 29.9px;
+  color: rgb(253, 255, 255);
+}
+
+.fullname {
+  border: 0;
+  padding: 14.9px;
+  width: 99.9%;
+  outline: none;
+}
+
+.email1 {
+  border: 0;
+  padding: 14.9px;
+  width: 99.9%;
+  outline: none;
+}
+
+.password1 {
+  border: 0;
+  padding: 16.9px;
+  width: 99.9%;
+  outline: none;
+}
+
+.single {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19.9px;
+  box-shadow: 5px 5px 7px #899197;
+  width: 99.9%;
+}
+
+.field {
+  border: 0;
+  padding: 14.9px;
+  width: 99.9%;
+  outline: none;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 94.9vh;
+}
+
+.logs-in,
+.resend-actions,
+.register {
+  text-align: center;
+}
+
+.btn-primary {
+  color: rgb(255, 255, 255);
+}
+
+.center-block {
+  width: 99.9%;
+  align-items: center;
+}
+
+.user-title {
+  font-size: 2.9em;
+  flex: 0.7;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+  margin-top: 3%;
+  text-align: center;
+  color: #21282e;
+}
+
+.btns-container {
+  text-align: center;
+  margin-top: 10%;
+}

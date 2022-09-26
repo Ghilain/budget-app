@@ -1,0 +1,37 @@
+<nav>
+  <div class="title-categs">
+    <div>
+      <%= link_to '<', root_path, class: "arrow-back" %>
+    </div>
+    <div>
+      <h1>Categories</h1>
+    </div>
+    <div>
+      <%= button_to 'LOG OUT', destroy_user_session_path, method: :delete, class: "destroy" %>
+    </div>
+  </div>
+</nav>
+<% @categories.each do |category| %>
+  <%= link_to category_path(category) do %>
+    <ul class="list-unstyled-cat list-unstyled">
+      <li class="icon-cat">
+        <%= category.icon %>
+      </li>
+
+      <li>
+        <p><%= category.name %></p>
+        <span><%= category.created_at.strftime("%Y/%m/%d") %></span>
+      </li>
+
+      <li>
+        <div>
+          <p>Sum: $<%= category.entities.sum(:amount)%></p>
+        </div>
+      </li>
+    </ul>
+  <% end %>
+<% end %>
+
+<div class="addnew-cat">
+  <%= link_to "Add New Category", new_category_path, class: "addnew-cat2" %>
+</div>

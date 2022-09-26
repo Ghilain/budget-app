@@ -1,0 +1,17 @@
+<section id="<%= dom_id entity %>">
+  <div class="pay-show">
+    <p>
+      <strong>Name: </strong>
+      <%=  entity.name %>
+    </p>
+
+    <p>
+      <strong>Amount: $</strong>
+      <%= entity.amount %>
+    </p>
+
+    <p class="remove">
+      <%= link_to "Show", entity, class: 'remove' %>
+    </p>
+  </div>
+</section>
